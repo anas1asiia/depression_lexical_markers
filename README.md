@@ -17,10 +17,17 @@ This repository contains code for a paper titled “Multilingual Lexical Markers
 - `lme.R`: Runs **LME models** to analyse associations between lexical features and depression symptom severity (PHQ-8 scores).
 
 ### 3. Machine Learning Models (`/ml`)
-- `elastic_net.ipynb`: Elastic Net regression
-- `svr.ipynb`: Support Vector Regression
-- `random_forest.ipynb`: Random Forest regression
-- `xgboost.ipynb`: XGBoost regression
+#### Trained on Lexical Features and TF-IDF
+- `elastic_net_lexical.ipynb`: Elastic Net regression
+- `svr_lexical.ipynb`: Support Vector Regression
+- `random_forest_lexical.ipynb`: Random Forest regression
+- `xgboost_lexical.ipynb`: XGBoost regression
+
+#### Trained on MPNet dense embeddings
+- `elastic_net_embed.ipynb`: Elastic Net regression
+- `svr_embed.ipynb`: Support Vector Regression
+- `random_forest_embed.ipynb`: Random Forest regression
+- `xgboost_embed.ipynb`: XGBoost regression
 
 ---
 
@@ -37,5 +44,5 @@ This repository contains code for a paper titled “Multilingual Lexical Markers
 If you have any questions or contributions, feel free to contact me:
 
 Anastasiia Tokareva
-📧 n.tokareva0601@gmail.com
+📧 an.tokareva0601@gmail.com
 
