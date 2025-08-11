@@ -36,7 +36,6 @@ This repository contains code for a paper titled “Multilingual Lexical Markers
 ### ✅ Requirements
 
 
-
 ---
 
 ## 📬 Contact
