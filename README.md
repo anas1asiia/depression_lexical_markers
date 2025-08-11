@@ -10,7 +10,7 @@ This repository contains code for a paper titled “Multilingual Lexical Markers
 
 ### 1. NLP Feature Extraction (`/nlp`)
 - `ttr_brunet.ipynb`: Extracts **Type-Token Ratio (TTR)** and **Brunet's Index** to indicate lexical diversity.
-- `mpnet_embed.py`: Extracts **dense sentence embeddings** using a multilingual Sentence-Transformer (MPNet) available on HuggingFace.
+- `mpnet_embed.py`: Extracts **dense sentence embeddings** using a multilingual Sentence-Transformer model (MPNet base v2) available on HuggingFace (https://huggingface.co/sentence-transformers/all-mpnet-base-v2).
 - `coref_chain_ratio.ipynb`: Extracts **coreference chain ratio** from text.
 
 ***Note***: the remaining lexical features (incl. frequency of positive, negative, past-focus, absolutist words, and first-person singular and plural pronouns, were extracted using LIWC-22 (https://www.liwc.app/).
