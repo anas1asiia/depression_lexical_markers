@@ -10,11 +10,11 @@ This repository contains code for a paper titled “Multilingual Lexical Markers
 
 ### 1. NLP Feature Extraction (`/nlp`)
 - `ttr_brunet.ipynb`: Extracts **Type-Token Ratio (TTR)** and **Brunet's Index** to indicate lexical diversity.
-- `mpnet_embeddings.ipynb`: Extracts **dense sentence embeddings** using a multilingual Sentence-Transformer (MPNet) available on HuggingFace.
+- `mpnet_embed.py`: Extracts **dense sentence embeddings** using a multilingual Sentence-Transformer (MPNet) available on HuggingFace.
 - `coref_chain_ratio.ipynb`: Extracts **coreference chain ratio** from text.
 
 ### 2. Linear Mixed Effects Modelling (`/lme`)
-- `lme.ipynb`: Runs **LME models** to analyse associations between lexical features and depression symptom severity (PHQ-8 scores).
+- `lme.R`: Runs **LME models** to analyse associations between lexical features and depression symptom severity (PHQ-8 scores).
 
 ### 3. Machine Learning Models (`/ml`)
 - `elastic_net.ipynb`: Elastic Net regression
