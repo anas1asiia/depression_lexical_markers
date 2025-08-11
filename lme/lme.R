@@ -1,6 +1,6 @@
 # ==========================================================
 
-# Script Name: lme_clean.R
+# Script Name: lme.R
 # Author: Anastasiia Tokareva
 # Created: May 2025
 # Version 4.1
