@@ -1,6 +1,6 @@
 # depression_lexical_markers
 
-This repository contains code for a paper titled “Multilingual Lexical Markers and Text Embedding Prediction of Depression Symptom Severity” (doi or link here), which explored **spoken language features across English, Dutch, and Spanish** to predict **Major Depressive Disorder (MDD) symptom severity**. We extracted both interpretable and high-dimensional language representations and evaluated their predictive performance using various machine learning models.
+This repository contains code for a paper titled “Multilingual Lexical Markers and Text Embedding Prediction of Depression Symptom Severity” (https://kclpure.kcl.ac.uk/portal/en/publications/lexical-markers-and-text-embedding-prediction-of-depression-sympt), which explored **spoken language features across English, Dutch, and Spanish** to predict **Major Depressive Disorder (MDD) symptom severity**. We extracted both interpretable and high-dimensional language representations and evaluated their predictive performance using various machine learning models.
 
 📌 **Note**: Due to privacy restrictions, we are **not able to share any datasets** in this repository. You can run the scripts with your own data using the required format.
 
