@@ -29,7 +29,7 @@ import pandas as pd
 import torch
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
-# suppress warning for cleaner output
+# suppress warnings for cleaner output
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -77,6 +77,7 @@ for index_SD, row_SD in df_data.iterrows():
 
 # save the file
 df_embeddings.to_csv("C:/Users/your/desired/file/name.csv", index=False, na_rep='NaN')
+
 
 
 
