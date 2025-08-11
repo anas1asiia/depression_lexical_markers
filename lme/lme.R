@@ -29,7 +29,7 @@
 #   2) Make sure required R packages (lme4, ggplot2, tidyverse, lubridate) are installed.
 #   3) Expected format: CSV with the following columns:
 #       Recording_Date, PHQ8, Age, Gender, Education_Years,
-#       lexical features (e.g., i, we, emo_neg, emo_pos, etc.),
+#       LIWC lexical features (e.g., i, we, emo_neg, emo_pos, etc.),
 #       participant_ID
 #   4) Date column must be convertible to R date format.
 
