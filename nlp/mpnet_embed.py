@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 """
+mpnet_embed.py
 Spyder Editor
 
-This is a temporary script file.
-"""
-
-"""
 This script extracts dense vector embeddings using the multilingual MPNet model
 (available at Hugging Face) with 768 dimensions.
 
@@ -80,6 +77,7 @@ for index_SD, row_SD in df_data.iterrows():
 
 # save the file
 df_embeddings.to_csv("C:/Users/your/desired/file/name.csv", index=False, na_rep='NaN')
+
 
 
 
