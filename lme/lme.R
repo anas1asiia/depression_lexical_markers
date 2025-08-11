@@ -145,7 +145,7 @@ datasets_list = list(
 )
 
 # create an empty df to store results for plotting later
-all_betas <- data.frame(
+all_betas = data.frame(
   Feature = character(),
   Predictor = character(),
   Estimate = numeric(),
@@ -206,7 +206,7 @@ feature_names = c(
 )
 
 # replace raw LIWC feature names with full names in the results
-all_betas$Feature <- feature_names[all_betas$Feature]
+all_betas$Feature = feature_names[all_betas$Feature]
 
 # specify the order to display features on the y-axis of the plot
 feature_order = c(
