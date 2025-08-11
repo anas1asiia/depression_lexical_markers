@@ -48,10 +48,10 @@ library(lubridate)
 # Get to the Data folder from your LME folder
 data_dir = file.path(getwd(), "..", "..", "Data")
 
-# Build paths to each language folder
-eng_path = file.path(data_dir, "English", "RADAR_SM_eng_LIWC_TTR_Brunet.csv")
-sp_path = file.path(data_dir, "Spanish", "RADAR_SM_sp_LIWC_TTR_Brunet.csv")
-dut_path = file.path(data_dir, "Dutch", "RADAR_SM_dut_LIWC_TTR_Brunet.csv")
+# Build paths to each language folder - change your file names here
+eng_path = file.path(data_dir, "English", "your_eng_data_with_all_features.csv")
+sp_path = file.path(data_dir, "Spanish", "your_sp_data_with_all_features.csv")
+dut_path = file.path(data_dir, "Dutch", "your_dut_data_with_all_features.csv")
 
 # Load the data
 data_eng = read.csv(eng_path)
@@ -110,8 +110,8 @@ data_dut = data_dut %>% rename(
 lexical_features_main = c("emo_neg", "emo_pos", "focuspast", "i", "we",
                           "WPS", "WC", "TTR", "Brunet")
 # main features AND all_none
-lexical_features_abs = c("i", "allnone", "emo_neg", "focuspast", "TTR", "WC", "WPS",
-                         "emo_pos", "Brunet", "we", "allnone")
+lexical_features_main = c("emo_neg", "emo_pos", "focuspast", "i", "we",
+                          "WPS", "WC", "TTR", "Brunet". "allnone")
 
 
 # here, the same list of main lexical features for each language
@@ -160,7 +160,7 @@ for (language in names(datasets_list)) {
   lexical_features = lexical_features_list[[language]]  # corresponding lexical features
   
   for (feature in lexical_features) {
-    formula = as.formula(paste(feature, "~ PHQ8 + COVID + Age + Gender + Education_Years + (1 | participant_ID)"))
+    formula = as.formula(paste(feature, "~ PHQ8 + COVID + Age + Gender + Education_Years + (1 | participant_ID)")) # random intercept
     model = lmer(formula, data = dataset, REML = TRUE)  # fit the LME model using REML
     
     # extract fixed effects estimates and CIs
@@ -251,7 +251,7 @@ ggplot(all_betas, aes(x = Estimate, y = Feature, color = Language)) +
     title = "Associations Between PHQ-8 and Lexical Features Across Languages",
     x = "PHQ-8 Coefficient Estimate (95% CI)"
   ) +
-  scale_color_manual(values = c(                                             # custom colors for languages
+  scale_color_manual(values = c(                                             # custom colours for languages
     "United Kingdom" = "skyblue",
     "Netherlands" = "#E69F00",
     "Spain" = "#77DD77"
