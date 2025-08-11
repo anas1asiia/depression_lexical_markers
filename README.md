@@ -13,6 +13,8 @@ This repository contains code for a paper titled “Multilingual Lexical Markers
 - `mpnet_embed.py`: Extracts **dense sentence embeddings** using a multilingual Sentence-Transformer (MPNet) available on HuggingFace.
 - `coref_chain_ratio.ipynb`: Extracts **coreference chain ratio** from text.
 
+***Note***: the remaining lexical features (incl. frequency of positive, negative, past-focus, and absolutist words, frequency of first-person singular and plural pronouns, were extracted using LIWC-22 (https://www.liwc.app/).
+
 ### 2. Linear Mixed Effects Modelling (`/lme`)
 - `lme.R`: Runs **LME models** to analyse associations between lexical features and depression symptom severity (PHQ-8 scores).
 
@@ -28,13 +30,6 @@ This repository contains code for a paper titled “Multilingual Lexical Markers
 - `svr_embed.ipynb`: Support Vector Regression
 - `random_forest_embed.ipynb`: Random Forest regression
 - `xgboost_embed.ipynb`: XGBoost regression
-
----
-
-## 🚀 Getting Started
-
-### ✅ Requirements
-
 
 ---
 
